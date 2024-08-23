@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding-top: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(images/ranger-4df6c1b6.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .hidden {
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    .visible {
+      opacity: 1;
+    }
+  </style>
+  <title>Get Quotes</title>
+</head>
+
+<body>
+
+  <h1
+    style="color: white; background-color: blueviolet; border-radius: 10px; padding: 20px; width: 60%; margin: 10px auto;">
+    Random Quotes</h1>
+  <div style="display: flex; flex-direction: column; gap: 200px; margin-top: 50px;">
+
+    <div id="showQuotes"
+      style="width: 70%; height: 100px; text-align: center; margin: 10px auto; align-content: center;"></div>
+
+    <button style=" width: 300px; margin: 10px auto;" class="btn btn-warning" onclick="getQuotes()">Get Quotes</button>
+
+  </div>
+
+
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
